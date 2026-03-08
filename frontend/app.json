@@ -1,0 +1,33 @@
+{
+  "expo": {
+    "name": "ai-tutor-frontend",
+    "slug": "ai-tutor-frontend",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "android": {
+      "package": "com.balajiraonadipalli.aitutorfrontend",
+      "permissions": [
+        "android.permission.RECORD_AUDIO",
+        "android.permission.MODIFY_AUDIO_SETTINGS"
+      ]
+    },
+    "ios": {
+      "infoPlist": {
+        "NSMicrophoneUsageDescription": "This app requires access to your microphone to conduct voice calls with your AI Tutor."
+      }
+    },
+    "plugins": [
+      [
+        "expo-av",
+        {
+          "microphonePermission": "This app requires access to your microphone to conduct voice calls with your AI Tutor."
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "63ac0a29-82c8-44e6-8961-c03830cee73d"
+      }
+    }
+  }
+}
